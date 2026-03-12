@@ -1,0 +1,65 @@
+:root {
+  /* Цветовая палитра */
+  --bg-body: #1e1e2f; /* самый тёмный, фон всей страницы */
+  --bg-surface: #2a2a40; /* карточки, секции (чуть светлее фона) */
+  --bg-surface-hover: #353550; /* при наведении на карточку */
+  --bg-surface-elevated: #3a3a55; /* модалки, выпадайки (ещё светлее) */
+  --primary-bg: #4655a7;
+  --secondary-bg: #656fa7;
+
+  /* Отступы */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 96px;
+
+  /* Размеры шрифта */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 2rem; /* 32px */
+  --text-4xl: 2.5rem; /* 40px */
+  --text-5xl: 3rem; /* 48px */
+
+  /* Шрифты */
+  --default-font: "Inter", "Arial", sans-serif;
+  --accent-font: "Raleway", "Arial", sans-serif;
+  --code-font: "JetBrains Mono", "Arial", sans-serif;
+
+  /* Цвета шрифтов */
+  --text-primary: #f0f0f0;
+  --text-accent: #ffb347;
+  --text-code: #e3d8b0;
+
+  /* Цвета бордеров */
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-strong: rgba(255, 255, 255, 0.2);
+
+  --border-surface: #3a3a55;
+  --border-surface-light: #454560;
+  --border-primary: #5a6ac0;
+  --border-secondary: #7a84b0;
+
+  --border-accent: #ffb347;
+  --border-accent-soft: rgba(255, 179, 71, 0.3);
+
+  /* Толщина */
+  --border-thin: 1px;
+  --border-medium: 2px;
+  --border-thick: 3px;
+
+  /* Скругления */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}

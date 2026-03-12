@@ -1,0 +1,18 @@
+.title--main{
+  text-align: center;
+  margin: var(--spacing-md) 0;
+}
+
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-items: center;
+  gap: var(--spacing-md);
+  
+}
+
+.card{
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
