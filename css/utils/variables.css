@@ -62,4 +62,20 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
+
+
+/* Тени */
+
+--shadow-card-hover: 0 15px 5px #4655a721;
+
+
+
+
+
+
+
+
+
+
+
 }

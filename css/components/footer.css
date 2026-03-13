@@ -1,0 +1,14 @@
+.footer{
+  background-color: var(--secondary-bg);
+  border-top: var(--border-thin) solid var(--border-secondary);
+}
+
+.wrapper--footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 50px;
+}

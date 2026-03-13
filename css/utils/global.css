@@ -2,10 +2,17 @@ body{
   font-family: 'Inter', 'Arial', sans-serif;
   background-color: var(--bg-body);
   color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a{
   cursor: pointer;
+}
+
+.main{
+  flex: 1;
 }
 
 .wrapper {

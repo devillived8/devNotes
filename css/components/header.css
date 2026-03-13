@@ -1,5 +1,6 @@
 .header{
   background-color: var(--secondary-bg);
+  border-bottom: var(--border-thin) solid var(--border-secondary);
 }
 
 .wrapper--header{
@@ -13,6 +14,29 @@
   gap: var(--spacing-lg);
   font-size: var(--text-xl);
   font-weight: 700;
+  position: relative;
+}
+
+.nav__list-element {
+  position: relative;
+}
+
+.nav__list-element::after {
+  content: '';
+  position: absolute;
+  /* Ставим разделитель в центр промежутка */
+  left: calc(100% + (var(--spacing-lg) / 2) - 1px); /* 1px - половина ширины разделителя */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 20px; /* фиксированная высота, не 100% */
+  background-color: var(--text-primary);
+  opacity: 0.5;
+}
+
+/* Убираем разделитель у последнего элемента */
+.nav__list-element:last-child::after {
+  display: none;
 }
 
 .nav__link{
