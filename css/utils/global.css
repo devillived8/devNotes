@@ -29,3 +29,7 @@ a{
   font-weight: 700;
   font-size: var(--text-2xl);
 }
+
+.logo{
+  min-width: 48px;
+}
