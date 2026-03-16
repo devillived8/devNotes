@@ -6,6 +6,8 @@
   --bg-surface-elevated: #3a3a55; /* модалки, выпадайки (ещё светлее) */
   --primary-bg: #4655a7;
   --secondary-bg: #656fa7;
+  --bg-cover: #000000a1;
+  
 
   /* Отступы */
   --spacing-xs: 4px;
@@ -62,6 +64,11 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
+
+
+  /* Настройки бургера */
+  --burger-color: #fff;
+  --burger-spacing: 10px;
 
 
 /* Тени */

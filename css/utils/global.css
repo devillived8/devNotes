@@ -13,6 +13,7 @@ a{
 
 .main{
   flex: 1;
+  position: relative;
 }
 
 .wrapper {
@@ -32,4 +33,12 @@ a{
 
 .logo{
   min-width: 48px;
+}
+
+.cover{
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  background-color: var(--bg-cover);
 }

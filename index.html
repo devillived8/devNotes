@@ -22,6 +22,12 @@
             src="./assets/images/favicon.svg"
             alt="devNotes logotype"
         /></a>
+        <!-- Burger menu -->
+        <div class="burger">
+          <span class="burger__item"></span>
+          <span class="burger__item"></span>
+          <span class="burger__item"></span>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list-element">
@@ -46,8 +52,21 @@
         </nav>
       </div>
     </header>
+          <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Html</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Css</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Js</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Github</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Ts</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">React</a></li>
+          </ul>
+        </nav>
+      </div>
     <main class="main">
-      <div class="wrapper">
+      <div class="cover cover--burger"></div>
+      <div class="wrapper wrapper--main">
         <h1 class="title title--main">
           devNotes - заметки для front-end разработчика
         </h1>
@@ -127,5 +146,6 @@
         </a>
       </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
