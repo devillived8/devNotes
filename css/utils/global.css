@@ -42,3 +42,10 @@ a{
   z-index: 3;
   background-color: var(--bg-cover);
 }
+
+.separator{
+  border: var(--border-thin) solid var(--text-primary);
+  height: 2px;
+  display: block;
+  width: 80%;
+}

@@ -7,8 +7,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
 .footer__logo {
   width: 50px;
+}
+
+.footer__author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
