@@ -1,23 +1,59 @@
 export class Burger {
-  constructor(selector, cover, mobileMenu) {
+  constructor(selector, cover, mobileMenu, activeClass = "--active") {
     this.burgerSelector = document.querySelector(selector);
     this.burgerCover = document.querySelector(cover);
     this.mobileMenu = document.querySelector(mobileMenu);
+    this.activeClass = activeClass;
+    this.isOpen = false;
+    this.burgerBaseClass = selector.replace(".", "");
+    this.menuBaseClass = mobileMenu.replace(".", "");
   }
 
+
+
   init() {
-    console.log(this.burgerSelector + " Создан!");
-    this.burgerSelector.addEventListener("click", () => {
-      if (this.burgerSelector.classList.contains("burger--active")) {
-        this.burgerSelector.classList.remove("burger--active");
-        this.burgerCover.style.display = "none";
-        this.mobileMenu.classList.remove("mobile-menu--active");
-        document.body.style.overflow = "";
-      } else {
-        this.burgerSelector.classList.add("burger--active");
-        this.burgerCover.style.display = "block";
-        this.mobileMenu.classList.add("mobile-menu--active");
-        document.body.style.overflow = "hidden";
+    this.burgerState();
+    this.closeByOverlay();
+    this.closeByKey();
+  }
+
+  checkState() {
+    this.burgerSelector?.classList.toggle(
+      `${this.burgerBaseClass}${this.activeClass}`,
+      this.isOpen,
+    );
+    this.mobileMenu?.classList.toggle(
+      `${this.menuBaseClass}${this.activeClass}`,
+      this.isOpen,
+    );
+    this.burgerCover.style.display = this.isOpen ? "block" : "none";
+    document.body.style.overflow = this.isOpen ? "hidden" : "";
+  }
+
+  burgerState() {
+    this.burgerSelector?.addEventListener("click", () => {
+      this.isOpen = !this.isOpen;
+      this.checkState();
+    });
+  }
+
+  closeBurger() {
+    this.isOpen = !this.isOpen;
+    this.checkState();
+  }
+
+  closeByOverlay() {
+    this.burgerCover?.addEventListener("click", (e) => {
+      if (e.target === this.burgerCover) {
+        this.closeBurger();
+      }
+    });
+  }
+
+  closeByKey() {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && this.isOpen) {
+        this.closeBurger();
       }
     });
   }
