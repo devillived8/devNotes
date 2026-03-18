@@ -44,6 +44,7 @@
   text-align: center;
   border-bottom: var(--border-thin) solid var(--border-primary);
   background-color: var(--primary-bg);
+  padding: var(--spacing-sm);
 }
 
 .technology__list-link{
