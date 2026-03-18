@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Веб-сайт шпаргалка для фронт-енд разработчкиков, сделано с целью обучения на яндекс практикуме."
+    />
+    <link rel="icon" href="../assets/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png" />
+    <title>devNotes - заметки фронт-енд разработчика</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/utils/technology-media.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper wrapper--header">
+        <a href="/"
+          ><img
+            class="logo"
+            src="../assets/images/favicon.svg"
+            alt="devNotes logotype"
+        /></a>
+        <!-- Burger menu -->
+        <div class="burger">
+          <span class="burger__item"></span>
+          <span class="burger__item"></span>
+          <span class="burger__item"></span>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-element">
+              <a class="nav__link nav__link--active" href="">Html</a>
+            </li>
+            <li class="nav__list-element">
+              <a class="nav__link" href="">Css</a>
+            </li>
+            <li class="nav__list-element">
+              <a class="nav__link" href="">Js</a>
+            </li>
+            <li class="nav__list-element">
+              <a class="nav__link" href="">Github</a>
+            </li>
+            <li class="nav__list-element">
+              <a class="nav__link" href="">Ts</a>
+            </li>
+            <li class="nav__list-element">
+              <a class="nav__link" href="">React</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link mobile-menu__link--active"
+              >Html</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Css</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Js</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Github</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Ts</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">React</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main">
+      <div class="cover cover--burger"></div>
+      <div class="wrapper wrapper--main">
+        <h1 class="title title--main">Html - что такое и для чего нужен.</h1>
+        <article class="technology">
+          <div class="technology__row">
+            <aside class="technology__aside">
+              <nav class="technology__nav">
+                <ul class="technology__list">
+                  <li class="technology__list-element">
+                    <a href="#introduction" class="technology__list-link">Введение</a>
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#history" class="technology__list-link"
+                      >История: как всё начиналось</a
+                    >
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#html5" class="technology__list-link"
+                      >Что изменил HTML5</a
+                    >
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#html-structure" class="technology__list-link"
+                      >Как устроен HTML-документ</a
+                    >
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#forms" class="technology__list-link">Формы</a>
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#basic-form-elements" class="technology__list-link"
+                      >Основные элементы форм</a
+                    >
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#label" class="technology__list-link"
+                      >Важно для доступности</a
+                    >
+                  </li>
+                  <li class="technology__list-element" >
+                    <a href="#form-example" class="technology__list-link"
+                      >Пример формы</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+
+            <section class="technology__info">
+              <h2 class="title title--technology" id="introduction">Введение</h2>
+              <p>
+                HTML (HyperText Markup Language) — это код, который строит
+                веб-страницы. Каждый сайт, который ты открываешь в браузере,
+                внутри состоит из HTML-тегов. Они говорят браузеру: «Этот текст
+                будет заголовком, этот — ссылкой, а это — картинка». Сам по себе
+                HTML не умеет ни считать, ни думать, ни реагировать на клики.
+                Его задача — структура. Всё остальное делают CSS (внешний вид) и
+                JavaScript (логика).
+              </p>
+              <h2 class="title title--technology" id="history">
+                История: как всё начиналось
+              </h2>
+              <p>
+                В 1989 году учёный Тим Бернерс-Ли работал в европейской
+                лаборатории CERN. Учёным нужно было обмениваться документами, но
+                каждый раз пересылать файлы и следить за версиями было
+                мучительно. Тим придумал систему, в которой документы связаны
+                между собой ссылками, — так родилась идея Всемирной паутины. Для
+                этой системы нужен был язык разметки. Тим взял за основу SGML
+                (сложный стандарт для документов) и упростил его до минимума.
+                Так в 1991 году появился первый HTML — с парой десятков тегов,
+                без картинок и таблиц. Первый в мире сайт (до сих пор работает)
+                — http://info.cern.ch. Дальше HTML развивался скачками: HTML 2.0
+                (1995) — появились формы HTML 3.2 (1997) — таблицы и скрипты
+                HTML 4.01 (1999) — разделение структуры и оформления (стили
+                вынесли в CSS) XHTML (2000-е) — попытка сделать HTML строже (не
+                взлетела) HTML5 (2014) — современный стандарт: семантика, видео,
+                аудио, canvas
+              </p>
+              <h2 class="title title--technology" id="html5">Что изменил HTML5</h2>
+              <p>До HTML5 верстали примерно так:</p>
+              <pre><code>&lt;div class="header"&gt;Шапка&lt;/div&gt;
+&lt;div class="nav"&gt;Меню&lt;/div&gt;
+&lt;div class="content"&gt;Контент&lt;/div&gt;</code></pre>
+              <p>
+                Браузеру было всё равно — везде просто div. HTML5 ввёл
+                семантические теги, которые не меняют внешний вид, но объясняют,
+                что где находится:
+              </p>
+              <ul class="tags-list">
+                <li><code>&lt;header&gt; — шапка сайта или раздела</code></li>
+                <li><code>&lt;nav&gt; — навигация</code></li>
+                <li>
+                  <code
+                    >&lt;main&gt; — главный контент (уникальный для
+                    страницы)</code
+                  >
+                </li>
+                <li>
+                  <code>&lt;article&gt; — независимая статья или пост</code>
+                </li>
+                <li><code>&lt;section&gt; — смысловой раздел</code></li>
+                <li>
+                  <code
+                    >&lt;aside&gt; — боковая панель (дополнительный
+                    контент)</code
+                  >
+                </li>
+                <li><code>&lt;footer&gt; — подвал</code></li>
+              </ul>
+
+              <ul>
+                <li>
+                  <strong>Семантика</strong> - разработчикам — код читается как
+                  книга
+                </li>
+                <li>
+                  <strong>SEO</strong> — поисковики лучше понимают структуру
+                </li>
+                <li>
+                  <strong>Скринридерам</strong> — незрячие люди быстрее
+                  ориентируются
+                </li>
+              </ul>
+              <h2 class="title title--technology" id="html-structure">Как устроен HTML-документ</h2>
+
+              <p>
+                Любой HTML-документ имеет обязательную структуру — скелет, с
+                которого всё начинается:
+              </p>
+
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Заголовок страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+  &lt;p&gt;Это мой первый сайт.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+              <p>Разберём по косточкам:</p>
+
+              <ul class="tags-list">
+                <li>
+                  <code>&lt;!DOCTYPE html&gt;</code> — объявление типа
+                  документа. Говорит браузеру: "используй HTML5".
+                </li>
+                <li>
+                  <code>&lt;html&gt;</code> — корневой элемент, обёртка для всей
+                  страницы. Атрибут <code>lang</code> указывает язык.
+                </li>
+                <li>
+                  <code>&lt;head&gt;</code> — контейнер для служебной
+                  информации: кодировка, заголовок вкладки, стили, мета-теги.
+                </li>
+                <li>
+                  <code>&lt;meta charset="UTF-8"&gt;</code> — задаёт кодировку
+                  текста (чтобы русский отображался нормально).
+                </li>
+                <li>
+                  <code>&lt;title&gt;</code> — заголовок страницы, который видно
+                  во вкладке браузера.
+                </li>
+                <li>
+                  <code>&lt;body&gt;</code> — всё, что видит пользователь:
+                  текст, картинки, кнопки.
+                </li>
+              </ul>
+
+              <p>
+                Всё, что ты видишь на сайте — внутри <code>&lt;body&gt;</code>.
+                Остальное — техническая часть.
+              </p>
+              <h2 class="title title--technology" id="forms">Формы</h2>
+
+              <p>
+                Формы нужны, чтобы пользователь мог отправить данные на сервер:
+                зарегистрироваться, написать сообщение, оставить отзыв.
+              </p>
+
+              <p>Базовая структура формы:</p>
+
+              <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;!-- Поля формы будут здесь --&gt;
+&lt;/form&gt;</code></pre>
+
+              <ul class="tags-list">
+                <li><code>action</code> — адрес, куда улетают данные</li>
+                <li>
+                  <code>method</code> — способ отправки (обычно
+                  <code>post</code> или <code>get</code>)
+                </li>
+              </ul>
+
+              <h2 class="title title--technology title--technology-small" id="basic-form-elements">
+                Основные элементы форм
+              </h2>
+
+              <ul class="tags-list">
+                <li>
+                  <code>&lt;input&gt;</code> — универсальное поле. Тип задаётся
+                  атрибутом <code>type</code>:
+                  <ul>
+                    <li><code>type="text"</code> — обычный текст</li>
+                    <li>
+                      <code>type="email"</code> — проверяет, что введён email
+                    </li>
+                    <li><code>type="password"</code> — скрывает символы</li>
+                    <li><code>type="checkbox"</code> — галочка</li>
+                    <li><code>type="radio"</code> — переключатель</li>
+                    <li><code>type="submit"</code> — кнопка отправки</li>
+                  </ul>
+                </li>
+                <li>
+                  <code>&lt;textarea&gt;</code> — многострочное поле для текста
+                </li>
+                <li>
+                  <code>&lt;select&gt;</code> + <code>&lt;option&gt;</code> —
+                  выпадающий список
+                </li>
+                <li><code>&lt;button&gt;</code> — кнопка</li>
+                <li>
+                  <code>&lt;label&gt;</code> — подпись к полю (кликабельная)
+                </li>
+              </ul>
+
+              <h2 class="title title--technology title--technology-small" id="label">
+                Важно для доступности
+              </h2>
+
+              <p>
+                Каждое поле должно иметь <code>&lt;label&gt;</code>, связанный
+                через <code>for="id"</code>:
+              </p>
+
+              <pre><code>&lt;label for="username"&gt;Имя:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;</code></pre>
+
+              <p>Тогда:</p>
+              <ul>
+                <li>Клик по подписи активирует поле</li>
+                <li>Скринридер прочитает название поля</li>
+              </ul>
+
+              <h2 class="title title--technology title--technology-small" id="form-example">
+                Пример формы
+              </h2>
+
+              <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Имя:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;label for="message"&gt;Сообщение:&lt;/label&gt;
+  &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+  &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper wrapper--footer">
+        <address class="footer__author">
+          Для связи с создателем -
+          <a
+            href="https://t.me/devillived8"
+            aria-label="Связаться с создателем"
+            target="_blank"
+          >
+            <img
+              class="footer__logo"
+              src="../assets/images/telegram.svg"
+              alt="telegram logo"
+            />
+          </a>
+        </address>
+      </div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

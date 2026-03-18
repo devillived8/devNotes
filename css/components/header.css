@@ -44,6 +44,7 @@
   transition: color .3s;
   position: relative;
   white-space: nowrap;
+  color: var(--text-primary);
 }
 
 .nav__link:hover{
@@ -63,4 +64,19 @@
 
 .nav__link:hover::after{
   width: 100%;
+}
+
+.nav__link--active{
+  color: var(--text-accent);
+}
+
+.nav__link.nav__link--active::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  background-color: var(--text-accent);
+  transition: width .3s;
 }

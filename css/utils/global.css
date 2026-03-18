@@ -1,5 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
 body{
   font-family: 'Inter', 'Arial', sans-serif;
+  line-height: 1.5;
   background-color: var(--bg-body);
   color: var(--text-primary);
   min-height: 100vh;
@@ -9,6 +15,7 @@ body{
 
 a{
   cursor: pointer;
+  color: var(--text-primary);
 }
 
 .main{
@@ -43,9 +50,8 @@ a{
   background-color: var(--bg-cover);
 }
 
-.separator{
-  border: var(--border-thin) solid var(--text-primary);
-  height: 2px;
-  display: block;
-  width: 80%;
+code{
+  font-size: var(--code-font);
+  color: var(--text-accent);
 }
+

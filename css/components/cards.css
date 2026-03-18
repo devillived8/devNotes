@@ -1,6 +1,6 @@
 .title--main{
   text-align: center;
-  margin: var(--spacing-md) 0 var(--text-4xl);
+  margin: var(--spacing-md) 0 var(--spacing-xl);
 }
 
 .main > .wrapper--main{
